@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)){
             Debug.Log("PAIUN PAUN!!!!");
             //GameObject bullet= Instantiate(bulletPrefab, bulletSpawner.transform.position, Quaternion.identity);
-            GameObject bullet = ObjectPool.instance.GetBalaPrefab();
+            GameObject bullet = ObjectPool.instance.GetBalaPrefab(); //usamos el metodo GetBalaPrefab para recuperar una bala de la lista de balas
 
             if(bullet != null)
             {
